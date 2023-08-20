@@ -1,0 +1,17 @@
+@import c.x.sample.db.ServiceRepo.BlackApp
+@(blackApps: Seq[BlackApp])
+
+<div class="card w-100 mb-3" style="background-color:lightgray;">
+    <div class="card-body">
+        <h2>Crawled Contents<span class="badge bg-primary">List</span></h2>
+        <p class="card-text">
+            <br/>
+        </p>
+    </div>
+</div>
+
+<div>
+    @for(blackApp <- blackApps) {
+        <p>@blackApp </p>
+    }
+</div>
